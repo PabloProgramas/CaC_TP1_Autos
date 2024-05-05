@@ -92,7 +92,7 @@ a:any-link {
   background-color: var(--BLANCO);
 }
 .header__button {
-  display: flex;
+  display: none;
   flex-flow: column nowrap;
   gap: 5px;
   background-color: var(--NEGRO);
@@ -133,6 +133,9 @@ section {
     flex-flow: column;
     gap: 0;
   }
+  .header__button {
+    display: flex;
+  }
   .header a {
     width: 100%;
     text-align: center;
@@ -148,6 +151,11 @@ section {
   }
   .primero__h2 {
     bottom: 20%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: unset !important;
   }
 }
 @media screen and (max-width: 425px) {
