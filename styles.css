@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Nunito&display=swap");
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+iput,
+textarea,
+button {
+  font-size: inherit;
+}
+/* GENERALES */
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: var(--FF-N);
+  font-size: var(--FS);
+  color: var(--BLANCO);
+}
+html {
+  scroll-behavior: smooth;
+}
+a:any-link {
+  color: var(--BLANCO);
+}
+
+/* VARIABLES */
+:root {
+  /* FONTS */
+  --FS: 1.5rem;
+  --FF-N: "Nunito", sans-serif;
+  --FF-B: "Bebas Neue", sans-serif;
+  --FF-P: "Pacifico", sans-serif;
+  /* COLORES */
+  --ROJO: #ff4c4c;
+  --NEGRO: #262626;
+  --BLANCO: whitesmoke;
+  /* PADDING */
+  --PADDING: 0.5rem;
+}
+/* HEADER */
+.header i {
+  font-size: 150%;
+}
+.header__h1 {
+  font-family: var(--FF-B);
+  letter-spacing: 3px;
+}
+.header {
+  padding-inline: var(--PADDING);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--NEGRO);
+  box-shadow: 0px 3px 3px var(--NEGRO);
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1;
+}
+.header__ul {
+  display: flex;
+  gap: 1rem;
+}
+.header a {
+  display: inline-block;
+  padding-block: var(--PADDING);
+}
+.header a:hover {
+  background-color: var(--BLANCO);
+  color: var(--NEGRO);
+}
+.header__button > div {
+  height: 4px;
+  width: 30px;
+  background-color: var(--BLANCO);
+}
+.header__button {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+  background-color: var(--NEGRO);
+  border: none;
+}
+/* SECCION 1  */
+section {
+  height: 100vh;
+}
+.primero {
+  background-image: url(img/bmw.jpg);
+  padding: var(--PADDING);
+  position: relative;
+}
+.primero__h2 {
+  font-size: clamp(3.5rem, 13vw, 10rem);
+  font-family: var(--FF-B);
+  letter-spacing: 3px;
+  position: absolute;
+  bottom: 10%;
+}
+.primero__p--segundo {
+  transition: all 1s 0.5s;
+  opacity: 0;
+  color: var(--ROJO);
+  transform: translateY(-100%);
+  display: inline-block;
+}
+.primero:hover .primero__p--segundo {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* SECCION 2 */
+
+/* MEDIA Q */
+@media screen and (max-width: 768px) {
+  .header__ul {
+    flex-flow: column;
+    gap: 0;
+  }
+  .header a {
+    width: 100%;
+    text-align: center;
+  }
+  .header__nav {
+    display: none;
+    width: 100%;
+    top: 70px;
+    background-color: var(--NEGRO);
+  }
+  .primero {
+    background-position: 90%;
+  }
+  .primero__h2 {
+    bottom: 20%;
+  }
+}
+@media screen and (max-width: 425px) {
+  .primero {
+    background-position: 85%;
+  }
+  .primero__h2 {
+    bottom: 30%;
+  }
+}
