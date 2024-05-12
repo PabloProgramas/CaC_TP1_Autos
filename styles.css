@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Nunito&display=swap");
+
 *,
 ::before,
 ::after {
@@ -6,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 img {
   width: 100%;
   height: auto;
@@ -17,24 +19,28 @@ textarea,
 button {
   font-size: inherit;
 }
+
 /* GENERALES */
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
 
 body {
-  max-width: 1200px;
+  max-width: 100%;
   margin: auto;
   font-family: var(--FF-N);
   font-size: var(--FS);
   color: var(--BLANCO);
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 a:any-link {
   color: var(--BLANCO);
 }
@@ -53,14 +59,17 @@ a:any-link {
   /* PADDING */
   --PADDING: 0.5rem;
 }
+
 /* HEADER */
 .header i {
   font-size: 150%;
 }
+
 .header__h1 {
   font-family: var(--FF-B);
   letter-spacing: 3px;
 }
+
 .header {
   padding-inline: var(--PADDING);
   display: flex;
@@ -74,23 +83,28 @@ a:any-link {
   max-width: 1200px;
   z-index: 1;
 }
+
 .header__ul {
   display: flex;
   gap: 1rem;
 }
+
 .header a {
   display: inline-block;
   padding-block: var(--PADDING);
 }
+
 .header a:hover {
   background-color: var(--BLANCO);
   color: var(--NEGRO);
 }
-.header__button > div {
+
+.header__button>div {
   height: 4px;
   width: 30px;
   background-color: var(--BLANCO);
 }
+
 .header__button {
   display: none;
   flex-flow: column nowrap;
@@ -98,15 +112,17 @@ a:any-link {
   background-color: var(--NEGRO);
   border: none;
 }
+
 /* SECCION 1  */
-section {
-  height: 100vh;
-}
+
 .primero {
   background-image: url(img/bmw.jpg);
   padding: var(--PADDING);
   position: relative;
+  width: 100%;
+  height: 100vh;
 }
+
 .primero__h2 {
   font-size: clamp(3.5rem, 13vw, 10rem);
   font-family: var(--FF-B);
@@ -114,6 +130,7 @@ section {
   position: absolute;
   bottom: 10%;
 }
+
 .primero__p--segundo {
   transition: all 1s 0.5s;
   opacity: 0;
@@ -121,11 +138,71 @@ section {
   transform: translateY(-100%);
   display: inline-block;
 }
+
 .primero:hover .primero__p--segundo {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* SECCION 2 */
+
+.segundo {
+  height: 90vh;
+  padding: 10px;
+  /* Altura del 90% del viewport */
+}
+
+.coches {
+  color: var(--NEGRO);
+  text-align: center;
+  font-family: var(--FF-B);
+}
+
+/* Contenedor de autos */
+.contenerdorAutos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+
+}
+
+/* Elemento individual (auto) */
+.elemento {
+  flex: 1 0 45%;
+  margin: 10px;
+  padding: 15px;
+  border: 1px solid var(--NEGRO);
+  color: var(--NEGRO);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  /* Ocultar contenido que se salga */
+}
+
+/* Imagen dentro del elemento */
+.elemento img {
+  max-height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .elemento {
+    flex: 1 0 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .elemento {
+    padding: 10px;
+  }
+}
 
 /* MEDIA Q */
 @media screen and (max-width: 768px) {
@@ -133,36 +210,49 @@ section {
     flex-flow: column;
     gap: 0;
   }
+
   .header__button {
     display: flex;
   }
+
   .header a {
     width: 100%;
     text-align: center;
   }
+
   .header__nav {
     display: none;
     width: 100%;
     top: 70px;
     background-color: var(--NEGRO);
   }
+
   .primero {
     background-position: 90%;
   }
+
   .primero__h2 {
     bottom: 20%;
   }
 }
+
 @media screen and (min-width: 768px) {
   .header__nav {
     display: unset !important;
   }
 }
+
 @media screen and (max-width: 425px) {
   .primero {
     background-position: 85%;
   }
+
   .primero__h2 {
     bottom: 30%;
   }
+}
+
+.tercera {
+  height: 70vh;
+  background-color: var(--ROJO);
 }

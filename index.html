@@ -1,42 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://kit.fontawesome.com/84087f9c05.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <i class="fa-solid fa-car"></i>
-      <h1 class="header__h1">Titulo</h1>
-      <button id="btn-header" class="header__button">
-        <div></div>
-        <div></div>
-        <div></div>
-      </button>
-      <nav id="nav-header" class="header__nav">
-        <ul class="header__ul">
-          <li><a href="#seccion1">seccion1</a></li>
-          <li><a href="#seccion2">seccion2</a></li>
-          <li><a href="#seccion3">seccion3</a></li>
-          <li><a href="#seccion4">seccion4</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="#seccion1" class="primero">
-        <h2 class="primero__h2">
-          <p class="primero__p">Lorem ipsum</p>
-          <p class="primero__p--segundo">dolor sit amet</p>
-        </h2>
-      </section>
-    </main>
-    <footer></footer>
-    <script src="javascritp/header.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/84087f9c05.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <i class="fa-solid fa-car"></i>
+    <h1 class="header__h1">Titulo</h1>
+    <button id="btn-header" class="header__button">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+    <nav id="nav-header" class="header__nav">
+      <ul class="header__ul">
+        <li><a href="#seccion1">seccion1</a></li>
+        <li><a href="#seccion2">seccion2</a></li>
+        <li><a href="#seccion3">seccion3</a></li>
+        <li><a href="#seccion4">seccion4</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Seccion 1 Principal-->
+    <section id="#seccion1" class="primero">
+      <h2 class="primero__h2">
+        <p class="primero__p">Lorem ipsum</p>
+        <p class="primero__p--segundo">dolor sit amet</p>
+      </h2>
+    </section>
+    <!--Seccion 2 catalogo de autos-->
+    <section id="seccion2" class="segundo">
+      <div>
+        <h1 class="coches">Nuestros coches disponibles</h1>
+        <div id="contenerdorAutos" class="contenerdorAutos">
+
+        </div>
+
+
+      </div>
+
+    </section>
+    <!--Seccion 3 Formulario-->
+    <section id="seccion3" class="tercera">
+      <h1>Contactenos</h1>
+
+      <form id="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido"required>
+
+        <label for="dni">DNI:</label>
+        <input type="number" id="dni"  required>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+
+    </section>
+
+
+    <!--Seccion 4 footer-->
+    <footer>
+
+    </footer>
+
+
+  </main>
+  <footer></footer>
+  <script src="javascritp/header.js"></script>
+</body>
+
 </html>
