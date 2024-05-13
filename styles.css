@@ -63,11 +63,16 @@ a:any-link {
 /* HEADER */
 .header i {
   font-size: 150%;
+ 
 }
 
 .header__h1 {
-  font-family: var(--FF-B);
-  letter-spacing: 3px;
+  font-family: var(--FF-B);  
+  letter-spacing: 3px;  
+}
+
+#subtitulo{
+  font-style: italic;
 }
 
 .header {
@@ -80,7 +85,7 @@ a:any-link {
   flex-wrap: wrap;
   position: fixed;
   width: 100%;
-  max-width: 1200px;
+  max-width: 3200px;
   z-index: 1;
 }
 
@@ -113,6 +118,18 @@ a:any-link {
   border: none;
 }
 
+.secciones{
+  background-color: grey;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 10px;
+  height: 30px;
+  line-height: 0px;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: 100;  
+}
+
 /* SECCION 1  */
 
 .primero {
@@ -129,6 +146,7 @@ a:any-link {
   letter-spacing: 3px;
   position: absolute;
   bottom: 10%;
+  font-style: italic;
 }
 
 .primero__p--segundo {
@@ -137,6 +155,7 @@ a:any-link {
   color: var(--ROJO);
   transform: translateY(-100%);
   display: inline-block;
+  font-style: italic;
 }
 
 .primero:hover .primero__p--segundo {
@@ -256,3 +275,59 @@ a:any-link {
   height: 70vh;
   background-color: var(--ROJO);
 }
+
+/*Footer*/
+
+/*Íconos de redes sociales*/
+.contenedor{
+  margin: 0;    
+  top: 140%;
+  left: 50%;
+  text-align: center;    
+}
+
+i{
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  margin: 25px;
+  border-radius: 50%;
+  padding: 7.5px;
+  box-shadow: 0px 5px 10px rgb(0,0,0, .35);
+  transition: 0.5s ease;
+}
+
+.fa-whatsapp:hover{
+  background-color: #25D366;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #25D366;                
+}
+
+.fa-youtube:hover{
+  background-color: #E10600;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #E10600;                
+}
+
+.fa-facebook:hover{
+  background-color: #3b5998;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #3b5998             
+}
+
+.fa-twitter:hover{
+  background-color: #00acee;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #00acee             
+}
+
+.fa-instagram:hover{
+  background-color: #cd486b;
+  color:  white;
+  transform: scale(1.2);
+  box-shadow: 0 0 25px #cd486b             
+}       
