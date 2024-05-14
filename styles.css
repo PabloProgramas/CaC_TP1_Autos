@@ -276,6 +276,16 @@ a:any-link {
   background-color: var(--ROJO);
 }
 
+#tituloRS{
+  color: black;
+  text-align: center;
+}
+
+#Copyright{
+  color: black;
+  text-align: center;
+}
+
 /*Footer*/
 
 /*Íconos de redes sociales*/
