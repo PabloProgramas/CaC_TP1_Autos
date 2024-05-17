@@ -48,25 +48,74 @@
     </section>
     <!--Seccion 3 Formulario-->
     <section id="seccion3" class="tercera">
-      <h1>Contactenos</h1>
+      <h1 id="titulo">Contáctenos</h1>
 
       <form id="formulario">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" required>
+        <div class="formularios">
+          <h3 class="subtitulo_Seccion3">Tus datos:</h3>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="input" placeholder="Mi nombre"><br>       
+          
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="input" placeholder="Mi apellido" required><br>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido"required>
+          <label for="dni">DNI:</label>
+          <input type="number" id="input" placeholder="Mi DNI" required><br>
 
-        <label for="dni">DNI:</label>
-        <input type="number" id="dni"  required>
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="input_email" placeholder="Mi email" required><br>
 
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" required>
+        </div>        
+        
+        <div class="formularios">
+            <h3 class="subtitulo_Seccion3">Tu auto:</h3>
+            <label>Elige tu auto:</label>                       
+            <select id="input_auto" >
+              <option value="">Mi auto</option>
+              <option value="BMW">BMW | BMW_X1</option>
+              <option value="BMW">BMW | BMW_M5_Sedán</option>
+              <option value="BMW">BMW | BMW_S8_Coupé</option>
+              <option value="BMW">BMW | BMW_Z4_Roadster</option>
+              <option value="Audi">Audi | A1</option>
+              <option value="Audi">Audi | Q2</option>
+              <option value="Audi">Audi | e-tron_GT</option>
+              <option value="Audi">Audi | Q8_e-tron</option>              
+              <option value="Toyota">Toyota | Corola</option>
+              <option value="Toyota">Toyota | Hilux</option>
+              <option value="Toyota">Toyota | Sw4</option>
+              <option value="Toyota">Toyota | Yaris</option>
+              <option value="Fiat">Fiat | Cronos</option>
+              <option value="Fiat">Fiat | Pulse</option>
+              <option value="Fiat">Fiat | Toro</option>
+              <option value="Fiat">Fiat | Fiorino</option>
+            </select>
+            <br>
+            <label>Elige tu color:  </label>             
+            
+              rojo <input type="radio" name="color" value="r">
+           
+              | azul <input type="radio" name="color" value="a">
+            
+              | blanco <input type="radio" name="color" value="b">
+            
+              | negro <input type="radio" name="color" value="n">
+            <br>
+            <label>Elige tu plan:</label>
+            
+              compra <input type="radio" name="plan" value="r">        
+              | alquiler <input type="radio" name="plan" value="a"> 
+              | plan de ahorro <input type="radio" name="plan" value="a"><br>
+                 
+        </div>            
 
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <div class="formularios">
+          <h3 class="subtitulo_Seccion3">Tu mensaje:</h3>          
+          <textarea id="input_mensaje" name="mensaje" rows="4" placeholder="Mi mensaje" required></textarea>
+          <br>  
+          <button type="submit" id="btn_enviar">- Enviar -</button>
+        </div>
 
-        <button type="submit">Enviar</button>
+        
       </form>
 
     </section>
@@ -75,7 +124,7 @@
   </main>
   <footer id="footerbackground">
       <div>
-        <h4 id="tituloRS">Buscanos en nuestras redes sociales</h4>
+        <h4 id="tituloRS">Búscanos en nuestras redes sociales</h4>
       </div>
     
       <div class="contenedor">
@@ -91,6 +140,7 @@
     
   </footer>
   <script src="javascritp/header.js"></script>
+  <script src="javascritp/formulario.js"></script>
 </body>
 
 </html>

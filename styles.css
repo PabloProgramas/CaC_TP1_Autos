@@ -271,11 +271,118 @@ a:any-link {
   }
 }
 
+
+/*tercera sección*/
 .tercera {
-  height: 70vh;
-  background-color: var(--ROJO);
+  height: 85vh;
+  background-image: url(img/BMW\ M3.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100%;
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 20px;
+  font-family: var(--FF-N);
 }
 
+/* Contáctenos*/
+
+#titulo{
+  text-align: center;
+}
+
+.subtitulo_Seccion3{
+  font-style: normal;
+  text-decoration: underline;
+}
+  
+
+  
+
+/*Formularios*/
+
+.formularios{
+  width: 30%;  
+  border: 2px solid black;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 20px;
+  font-family: var(--FF-N);
+  font-style: italic;
+  font-size: 20px;
+  background-color: var(--ROJO); 
+  }
+
+
+#input{
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: var(--FF-N)
+}
+
+#input_auto{
+  width: 340px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: var(--FF-N)
+}
+
+#input_email{
+  width: 290px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: var(--FF-N)
+}
+
+#input_mensaje{
+  width: 470px;
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: var(--FF-N)
+}
+
+.datos{ 
+  height: 185px;  
+}
+
+.auto{  
+  height: 180px;  
+}
+
+.mensaje{ 
+  height: 280px;   
+}
+
+.colores{
+  text-decoration:none
+}
+
+.plan{
+  text-decoration:none
+
+}
+
+#btn_enviar{
+  
+  border-radius: 12px;
+  font-size: 14px;
+  font-family: var(--FF-N);
+  font-style: italic;
+  font-weight: 600;
+  padding: 6px 15px ;
+  position:absolute;
+  left: 13%;
+
+}
+
+#btn_enviar:hover{  
+  background-color: #262626;
+  align-items: center;
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0 0 15px #25D366;   
+}
 
 /*Footer*/
 
