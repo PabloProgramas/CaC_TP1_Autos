@@ -63,15 +63,14 @@ a:any-link {
 /* HEADER */
 .header i {
   font-size: 150%;
- 
 }
 
 .header__h1 {
-  font-family: var(--FF-B);  
-  letter-spacing: 3px;  
+  font-family: var(--FF-B);
+  letter-spacing: 3px;
 }
 
-#subtitulo{
+#subtitulo {
   font-style: italic;
 }
 
@@ -91,12 +90,19 @@ a:any-link {
 
 .header__ul {
   display: flex;
-  gap: 1rem;
+  width: 45vw;
+  justify-content: space-around;
+  font-size: 70%;
+  align-items: center;
 }
 
 .header a {
   display: inline-block;
   padding-block: var(--PADDING);
+  background-color: gray;
+  border-radius: 25px;
+  padding: var(--PADDING);
+  text-align: center;
 }
 
 .header a:hover {
@@ -104,7 +110,7 @@ a:any-link {
   color: var(--NEGRO);
 }
 
-.header__button>div {
+.header__button > div {
   height: 4px;
   width: 30px;
   background-color: var(--BLANCO);
@@ -116,18 +122,6 @@ a:any-link {
   gap: 5px;
   background-color: var(--NEGRO);
   border: none;
-}
-
-.secciones{
-  background-color: grey;
-  border-radius: 25px;
-  margin: 5px;
-  padding: 10px;
-  height: 30px;
-  line-height: 0px;
-  font-size: large;
-  font-family: sans-serif;
-  font-weight: 100;  
 }
 
 /* SECCION 1  */
@@ -166,7 +160,7 @@ a:any-link {
 /* SECCION 2 */
 
 .segundo {
-  height: 90vh;
+  min-height: 90vh;
   padding: 10px;
   /* Altura del 90% del viewport */
 }
@@ -182,8 +176,6 @@ a:any-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
-
 }
 
 /* Elemento individual (auto) */
@@ -209,8 +201,6 @@ a:any-link {
   border-radius: 10px;
 }
 
-
-
 @media (max-width: 768px) {
   .elemento {
     flex: 1 0 100%;
@@ -228,6 +218,11 @@ a:any-link {
   .header__ul {
     flex-flow: column;
     gap: 0;
+    width: 100%;
+  }
+  .header li {
+    width: 100%;
+    border: 1px solid var(--NEGRO);
   }
 
   .header__button {
@@ -271,14 +266,12 @@ a:any-link {
   }
 }
 
-
 /*tercera sección*/
 .tercera {
-  height: 85vh;
+  min-height: 85vh;
   background-image: url(img/BMW\ M3.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 100%;
   border: 2px solid black;
   padding: 10px;
   margin: 10px;
@@ -288,22 +281,19 @@ a:any-link {
 
 /* Contáctenos*/
 
-#titulo{
+#titulo {
   text-align: center;
 }
 
-.subtitulo_Seccion3{
+.subtitulo_Seccion3 {
   font-style: normal;
   text-decoration: underline;
 }
-  
-
-  
 
 /*Formularios*/
 
-.formularios{
-  width: 30%;  
+.formularios {
+  width: 30%;
   border: 2px solid black;
   padding: 10px;
   margin: 0px;
@@ -311,86 +301,82 @@ a:any-link {
   font-family: var(--FF-N);
   font-style: italic;
   font-size: 20px;
-  background-color: var(--ROJO); 
-  }
-
-
-#input{
-  font-size: 14px;
-  border-radius: 8px;
-  font-family: var(--FF-N)
+  background-color: var(--ROJO);
 }
 
-#input_auto{
+#input {
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: var(--FF-N);
+}
+
+#input_auto {
   width: 340px;
   font-size: 14px;
   border-radius: 8px;
-  font-family: var(--FF-N)
+  font-family: var(--FF-N);
 }
 
-#input_email{
+#input_email {
   width: 290px;
   font-size: 14px;
   border-radius: 8px;
-  font-family: var(--FF-N)
+  font-family: var(--FF-N);
 }
 
-#input_mensaje{
+#input_mensaje {
   width: 470px;
   font-size: 14px;
   border-radius: 8px;
-  font-family: var(--FF-N)
+  font-family: var(--FF-N);
 }
 
-.datos{ 
-  height: 185px;  
+.datos {
+  height: 185px;
 }
 
-.auto{  
-  height: 180px;  
+.auto {
+  height: 180px;
 }
 
-.mensaje{ 
-  height: 280px;   
+.mensaje {
+  height: 280px;
 }
 
-.colores{
-  text-decoration:none
+.colores {
+  text-decoration: none;
 }
 
-.plan{
-  text-decoration:none
-
+.plan {
+  text-decoration: none;
 }
 
-#btn_enviar{
-  
+#btn_enviar {
   border-radius: 12px;
   font-size: 14px;
   font-family: var(--FF-N);
   font-style: italic;
   font-weight: 600;
-  padding: 6px 15px ;
-  position:absolute;
+  padding: 6px 15px;
+  position: absolute;
   left: 13%;
-
 }
 
-#btn_enviar:hover{  
+#btn_enviar:hover {
   background-color: #262626;
   align-items: center;
   color: white;
   transform: scale(1.2);
-  box-shadow: 0 0 15px #25D366;   
+  box-shadow: 0 0 15px #25d366;
 }
 
 /*Footer*/
 
-#footerbackground{
-  background-color: var(--NEGRO);  
+#footerbackground {
+  background-color: var(--NEGRO);
 }
 
-#tituloRS{
+#tituloRS {
   color: black;
   text-align: center;
   font-family: var(--FF-N);
@@ -399,63 +385,63 @@ a:any-link {
 }
 
 /*Íconos de redes sociales*/
-.contenedor{
-  margin: 0;    
+.contenedor {
+  margin: 0;
   top: 140%;
   left: 50%;
-  text-align: center;      
+  text-align: center;
 }
 
-i{
+.contenedor i {
   text-align: center;
   font-size: 25px;
   color: black;
   margin: 25px;
   border-radius: 50%;
   padding: 7.5px;
-  box-shadow: 0px 5px 10px rgb(0,0,0, .35);
+  box-shadow: 0px 5px 10px rgb(0, 0, 0, 0.35);
   transition: 0.5s ease;
   background-color: white;
 }
 
-.fa-whatsapp:hover{
-  background-color: #25D366;
+.fa-whatsapp:hover {
+  background-color: #25d366;
   color: white;
   transform: scale(1.2);
-  box-shadow: 0 0 25px #25D366;                
+  box-shadow: 0 0 25px #25d366;
 }
 
-.fa-youtube:hover{
-  background-color: #E10600;
+.fa-youtube:hover {
+  background-color: #e10600;
   color: white;
   transform: scale(1.2);
-  box-shadow: 0 0 25px #E10600;                
+  box-shadow: 0 0 25px #e10600;
 }
 
-.fa-facebook:hover{
+.fa-facebook:hover {
   background-color: #3b5998;
   color: white;
   transform: scale(1.2);
-  box-shadow: 0 0 25px #3b5998             
+  box-shadow: 0 0 25px #3b5998;
 }
 
-.fa-twitter:hover{
+.fa-twitter:hover {
   background-color: #00acee;
   color: white;
   transform: scale(1.2);
-  box-shadow: 0 0 25px #00acee             
+  box-shadow: 0 0 25px #00acee;
 }
 
-.fa-instagram:hover{
+.fa-instagram:hover {
   background-color: #cd486b;
-  color:  white;
+  color: white;
   transform: scale(1.2);
-  box-shadow: 0 0 25px #cd486b             
-}       
+  box-shadow: 0 0 25px #cd486b;
+}
 
-#Copyright{
+#Copyright {
   color: black;
   text-align: center;
-  font-family: var(--FF-N);  
+  font-family: var(--FF-N);
   font-weight: 800;
 }
