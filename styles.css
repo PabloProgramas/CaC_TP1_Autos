@@ -68,6 +68,13 @@ a:any-link {
 .header__h1 {
   font-family: var(--FF-B);
   letter-spacing: 3px;
+  text-wrap: nowrap;
+}
+.header__div {
+  width: 45vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #subtitulo {
@@ -220,6 +227,9 @@ a:any-link {
     gap: 0;
     width: 100%;
   }
+  .header__div {
+    width: 80vw;
+  }
   .header li {
     width: 100%;
     border: 1px solid var(--NEGRO);
@@ -256,9 +266,13 @@ a:any-link {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
   .primero {
     background-position: 85%;
+  }
+  .header__div {
+    flex-flow: column;
+    width: 70vw;
   }
 
   .primero__h2 {
