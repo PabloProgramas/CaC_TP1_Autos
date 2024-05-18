@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/84087f9c05.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d0bac0c207.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/84087f9c05.js" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/d0bac0c207.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <header class="header">
-    <i class="fa-solid fa-car"></i>
-    <h1 class="header__h1">C_a_C AUTOS</h1><h3 id="subtitulo">Rent&Sale</h3>
-    <button id="btn-header" class="header__button">
-      <div></div>
-      <div></div>
-      <div></div>
-    </button>
-    <nav id="nav-header" class="header__nav">
-      <ul class="header__ul">
-        <li class="secciones"><a href="#seccion1">Home</a></li>
-        <li class="secciones"><a href="#seccion2">Nuestros Autos</a></li>
-        <li class="secciones"><a href="#seccion3">Contáctenos</a></li>
-        <li class="secciones"><a href="#seccion4">Quienes somos</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <!--Seccion 1 Principal-->
-    <section id="#seccion1" class="primero">
-      <h2 class="primero__h2">
-        <p class="primero__p">Es tu auto...</p>
-        <p class="primero__p--segundo">es tu estilo!</p>
-      </h2>
-    </section>
-    <!--Seccion 2 catalogo de autos-->
-    <section id="seccion2" class="segundo">
-      <div>
-        <h1 class="coches">Nuestros coches disponibles</h1>
-        <div id="contenerdorAutos" class="contenerdorAutos">
-
-        </div>
+  <body>
+    <header class="header">
+      <i class="fa-solid fa-car"></i>
+      <div class="header__div">
+        <h1 class="header__h1">C_a_C AUTOS</h1>
+        <h3 id="subtitulo">Rent&Sale</h3>
       </div>
+      <button id="btn-header" class="header__button">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <nav id="nav-header" class="header__nav">
+        <ul class="header__ul">
+          <li><a href="#seccion1">Home</a></li>
+          <li><a href="#seccion2">Nuestros Autos</a></li>
+          <li><a href="#seccion3">Contáctenos</a></li>
+          <li><a href="#seccion4">Quienes somos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--Seccion 1 Principal-->
+      <section id="seccion1" class="primero">
+        <h2 class="primero__h2">
+          <p class="primero__p">Es tu auto...</p>
+          <p class="primero__p--segundo">es tu estilo!</p>
+        </h2>
+      </section>
+      <!--Seccion 2 catalogo de autos-->
+      <section id="seccion2" class="segundo">
+        <div>
+          <h1 class="coches">Nuestros coches disponibles</h1>
+          <div id="contenerdorAutos" class="contenerdorAutos"></div>
+        </div>
+      </section>
+      <!--Seccion 3 Formulario-->
+      <section id="seccion3" class="tercera">
+        <h1 id="titulo">Contáctenos</h1>
 
-    </section>
-    <!--Seccion 3 Formulario-->
-    <section id="seccion3" class="tercera">
-      <h1 id="titulo">Contáctenos</h1>
+        <form id="formulario">
+          <div class="formularios">
+            <h3 class="subtitulo_Seccion3">Tus datos:</h3>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="input" placeholder="Mi nombre" /><br />
 
-      <form id="formulario">
-        <div class="formularios">
-          <h3 class="subtitulo_Seccion3">Tus datos:</h3>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="input" placeholder="Mi nombre"><br>       
-          
-          <label for="apellido">Apellido:</label>
-          <input type="text" id="input" placeholder="Mi apellido" required><br>
+            <label for="apellido">Apellido:</label>
+            <input
+              type="text"
+              id="input"
+              placeholder="Mi apellido"
+              required
+            /><br />
 
-          <label for="dni">DNI:</label>
-          <input type="number" id="input" placeholder="Mi DNI" required><br>
+            <label for="dni">DNI:</label>
+            <input
+              type="number"
+              id="input"
+              placeholder="Mi DNI"
+              required
+            /><br />
 
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="input_email" placeholder="Mi email" required><br>
+            <label for="email">Correo electrónico:</label>
+            <input
+              type="email"
+              id="input_email"
+              placeholder="Mi email"
+              required
+            /><br />
+          </div>
 
-        </div>        
-        
-        <div class="formularios">
+          <div class="formularios">
             <h3 class="subtitulo_Seccion3">Tu auto:</h3>
-            <label>Elige tu auto:</label>                       
-            <select id="input_auto" >
+            <label>Elige tu auto:</label>
+            <select id="input_auto">
               <option value="">Mi auto</option>
               <option value="BMW">BMW | BMW_X1</option>
               <option value="BMW">BMW | BMW_M5_Sedán</option>
@@ -79,7 +98,7 @@
               <option value="Audi">Audi | A1</option>
               <option value="Audi">Audi | Q2</option>
               <option value="Audi">Audi | e-tron_GT</option>
-              <option value="Audi">Audi | Q8_e-tron</option>              
+              <option value="Audi">Audi | Q8_e-tron</option>
               <option value="Toyota">Toyota | Corola</option>
               <option value="Toyota">Toyota | Hilux</option>
               <option value="Toyota">Toyota | Sw4</option>
@@ -89,58 +108,66 @@
               <option value="Fiat">Fiat | Toro</option>
               <option value="Fiat">Fiat | Fiorino</option>
             </select>
-            <br>
-            <label>Elige tu color:  </label>             
-            
-              rojo <input type="radio" name="color" value="r">
-           
-              | azul <input type="radio" name="color" value="a">
-            
-              | blanco <input type="radio" name="color" value="b">
-            
-              | negro <input type="radio" name="color" value="n">
-            <br>
+            <br />
+            <label>Elige tu color: </label>
+
+            rojo <input type="radio" name="color" value="r" />
+
+            | azul <input type="radio" name="color" value="a" />
+
+            | blanco <input type="radio" name="color" value="b" />
+
+            | negro <input type="radio" name="color" value="n" />
+            <br />
             <label>Elige tu plan:</label>
-            
-              compra <input type="radio" name="plan" value="r">        
-              | alquiler <input type="radio" name="plan" value="a"> 
-              | plan de ahorro <input type="radio" name="plan" value="a"><br>
-                 
-        </div>            
 
-        <div class="formularios">
-          <h3 class="subtitulo_Seccion3">Tu mensaje:</h3>          
-          <textarea id="input_mensaje" name="mensaje" rows="4" placeholder="Mi mensaje" required></textarea>
-          <br>  
-          <button type="submit" id="btn_enviar">- Enviar -</button>
-        </div>
+            compra <input type="radio" name="plan" value="r" /> | alquiler
+            <input type="radio" name="plan" value="a" /> | plan de ahorro
+            <input type="radio" name="plan" value="a" /><br />
+          </div>
 
-        
-      </form>
-
-    </section>
-    
-
-  </main>
-  <footer id="footerbackground">
+          <div class="formularios">
+            <h3 class="subtitulo_Seccion3">Tu mensaje:</h3>
+            <textarea
+              id="input_mensaje"
+              name="mensaje"
+              rows="4"
+              placeholder="Mi mensaje"
+              required
+            ></textarea>
+            <br />
+            <button type="submit" id="btn_enviar">- Enviar -</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer id="footerbackground">
       <div>
         <h4 id="tituloRS">Búscanos en nuestras redes sociales</h4>
       </div>
-    
+
       <div class="contenedor">
-        <a href="https://web.whatsapp.com/" target="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
-        <a href="https://www.youtube.com/" target="youtube"><i class="fa-brands fa-youtube"></i></a>
-        <a href="https://www.facebook.com/" target="faceboo"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.twitter.com/" target="twitter"><i class="fa-brands fa-twitter"></i></a>
-        <a href="https://www.instagram.com/" target="instagram"><i class="fa-brands fa-instagram"></i></a>        
+        <a href="https://web.whatsapp.com/" target="whatsapp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.youtube.com/" target="youtube"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="faceboo"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="twitter"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
       </div>
       <div>
         <h6 id="Copyright">Copyright - Todos los derechos reservados</h6>
       </div>
-    
-  </footer>
-  <script src="javascritp/header.js"></script>
-  <script src="javascritp/formulario.js"></script>
-</body>
-
+    </footer>
+    <script src="javascritp/header.js"></script>
+    <script src="javascritp/formulario.js"></script>
+  </body>
 </html>
