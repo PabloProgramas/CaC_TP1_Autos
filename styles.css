@@ -14,7 +14,7 @@ img {
   display: block;
 }
 
-iput,
+input,
 textarea,
 button {
   font-size: inherit;
@@ -95,6 +95,19 @@ a:any-link {
   z-index: 1;
 }
 
+.header i {
+  font-size: 1.5em;
+}
+
+.header__h1 {
+  font-family: var(--FF-B);
+  letter-spacing: 3px;
+}
+
+#subtitulo {
+  font-style: italic;
+}
+
 .header__ul {
   display: flex;
   width: 45vw;
@@ -131,8 +144,24 @@ a:any-link {
   border: none;
 }
 
+<<<<<<< HEAD
 /* SECCION 1  */
 
+=======
+.secciones{
+  background-color: grey;
+  border-radius: 25px;
+  margin: 5px;
+  padding: 10px;
+  height: 30px;
+  line-height: 0px;
+  font-size: large;
+  font-family: sans-serif;
+  font-weight: 100;  
+}
+
+/* SECCION 1 */
+>>>>>>> Gonza
 .primero {
   background-image: url(img/bmw.jpg);
   padding: var(--PADDING);
@@ -165,11 +194,9 @@ a:any-link {
 }
 
 /* SECCION 2 */
-
 .segundo {
   min-height: 90vh;
   padding: 10px;
-  /* Altura del 90% del viewport */
 }
 
 .coches {
@@ -178,14 +205,12 @@ a:any-link {
   font-family: var(--FF-B);
 }
 
-/* Contenedor de autos */
 .contenerdorAutos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-/* Elemento individual (auto) */
 .elemento {
   flex: 1 0 45%;
   margin: 10px;
@@ -197,10 +222,8 @@ a:any-link {
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
-  /* Ocultar contenido que se salga */
 }
 
-/* Imagen dentro del elemento */
 .elemento img {
   max-height: 200px;
   width: auto;
@@ -316,6 +339,7 @@ a:any-link {
   font-style: italic;
   font-size: 20px;
   background-color: var(--ROJO);
+<<<<<<< HEAD
 }
 
 #input {
@@ -326,20 +350,43 @@ a:any-link {
 
 #input_auto {
   width: 340px;
+=======
+}
+
+
+#input{
   font-size: 14px;
   border-radius: 8px;
   font-family: var(--FF-N);
 }
 
+#input_auto{
+  width: 100%!important;
+>>>>>>> Gonza
+  font-size: 14px;
+  border-radius: 8px;
+  font-family: var(--FF-N);
+}
+
+<<<<<<< HEAD
 #input_email {
   width: 290px;
+=======
+#input_email{
+  width: 100%!important;
+>>>>>>> Gonza
   font-size: 14px;
   border-radius: 8px;
   font-family: var(--FF-N);
 }
 
+<<<<<<< HEAD
 #input_mensaje {
   width: 470px;
+=======
+#input_mensaje{
+  width: 100%!important;
+>>>>>>> Gonza
   font-size: 14px;
   border-radius: 8px;
   font-family: var(--FF-N);

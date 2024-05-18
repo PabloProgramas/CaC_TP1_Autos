@@ -50,7 +50,7 @@ formulario.addEventListener('submit', (event) => {
 
     if (input.value.trim() === '') {
       hayErrores = true;
-      error.textContent = 'Este campo es obligatorio';
+      alert("Faltan campos por completar");// 'Este campo es obligatorio';
       error.style.display = 'block';
     }
   });
@@ -59,7 +59,7 @@ formulario.addEventListener('submit', (event) => {
     alert("Faltan completar campos")
     return; 
   } else {
-    alert("Mensaje enviado correcetaomente")
+    alert("Mensaje enviado correctamente")
   }
 });
 
