@@ -10,7 +10,7 @@ btn.onclick = () => {
   }
 };
 
-const autos = [
+/* const autos = [
   { car: "BMW", imagen: "/img/bmw-m4-csl.jpg" },
   { car: "Audi", imagen: "/img/audi-a5-4.jpg" },
   { car: "Toyota", imagen: "/img/toyota-corolla-gr-sport-2024-0.jpg" },
@@ -34,32 +34,35 @@ for (const elemento of autos) {
   divElemento.appendChild(nombreParrafo);
   contenedorElementos.appendChild(divElemento);
 }
+ */
+const formulario = document.getElementById("formulario");
+const inputs = document.querySelectorAll(
+  "#formulario input, #formulario textarea"
+);
+const errores = document.querySelectorAll(".error");
 
-const formulario = document.getElementById('formulario');
-const inputs = document.querySelectorAll('#formulario input, #formulario textarea');
-const errores = document.querySelectorAll('.error');
-
-formulario.addEventListener('submit', (event) => {
-  event.preventDefault(); 
+formulario.addEventListener("submit", (event) => {
+  event.preventDefault();
 
   let hayErrores = false;
 
   // Validar campos
-  inputs.forEach(input => {
-    const error = document.querySelector(`#formulario .error[for="${input.id}"]`);
+  inputs.forEach((input) => {
+    const error = document.querySelector(
+      `#formulario .error[for="${input.id}"]`
+    );
 
-    if (input.value.trim() === '') {
+    if (input.value.trim() === "") {
       hayErrores = true;
-      alert("Faltan campos por completar");// 'Este campo es obligatorio';
-      error.style.display = 'block';
+      alert("Faltan campos por completar"); // 'Este campo es obligatorio';
+      error.style.display = "block";
     }
   });
 
   if (hayErrores) {
-    alert("Faltan completar campos")
-    return; 
+    alert("Faltan completar campos");
+    return;
   } else {
-    alert("Mensaje enviado correctamente")
+    alert("Mensaje enviado correctamente");
   }
 });
-

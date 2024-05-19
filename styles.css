@@ -144,24 +144,7 @@ a:any-link {
   border: none;
 }
 
-<<<<<<< HEAD
-/* SECCION 1  */
-
-=======
-.secciones{
-  background-color: grey;
-  border-radius: 25px;
-  margin: 5px;
-  padding: 10px;
-  height: 30px;
-  line-height: 0px;
-  font-size: large;
-  font-family: sans-serif;
-  font-weight: 100;  
-}
-
 /* SECCION 1 */
->>>>>>> Gonza
 .primero {
   background-image: url(img/bmw.jpg);
   padding: var(--PADDING);
@@ -206,22 +189,20 @@ a:any-link {
 }
 
 .contenerdorAutos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .elemento {
-  flex: 1 0 45%;
   margin: 10px;
   padding: 15px;
   border: 1px solid var(--NEGRO);
   color: var(--NEGRO);
   display: flex;
-  justify-content: space-around;
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
+  flex-flow: column;
 }
 
 .elemento img {
@@ -231,24 +212,15 @@ a:any-link {
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
-  .elemento {
-    flex: 1 0 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .elemento {
-    padding: 10px;
-  }
-}
-
 /* MEDIA Q */
 @media screen and (max-width: 768px) {
   .header__ul {
     flex-flow: column;
     gap: 0;
     width: 100%;
+  }
+  .contenerdorAutos {
+    grid-template-columns: 1fr 1fr;
   }
   .header__div {
     width: 80vw;
@@ -292,6 +264,9 @@ a:any-link {
 @media screen and (max-width: 480px) {
   .primero {
     background-position: 85%;
+  }
+  .contenerdorAutos {
+    grid-template-columns: 1fr;
   }
   .header__div {
     flex-flow: column;
@@ -339,7 +314,6 @@ a:any-link {
   font-style: italic;
   font-size: 20px;
   background-color: var(--ROJO);
-<<<<<<< HEAD
 }
 
 #input {
@@ -349,44 +323,21 @@ a:any-link {
 }
 
 #input_auto {
-  width: 340px;
-=======
-}
-
-
-#input{
+  width: 100% !important;
   font-size: 14px;
   border-radius: 8px;
   font-family: var(--FF-N);
 }
 
-#input_auto{
-  width: 100%!important;
->>>>>>> Gonza
-  font-size: 14px;
-  border-radius: 8px;
-  font-family: var(--FF-N);
-}
-
-<<<<<<< HEAD
 #input_email {
-  width: 290px;
-=======
-#input_email{
-  width: 100%!important;
->>>>>>> Gonza
+  width: 100% !important;
   font-size: 14px;
   border-radius: 8px;
   font-family: var(--FF-N);
 }
 
-<<<<<<< HEAD
 #input_mensaje {
-  width: 470px;
-=======
-#input_mensaje{
-  width: 100%!important;
->>>>>>> Gonza
+  width: 100% !important;
   font-size: 14px;
   border-radius: 8px;
   font-family: var(--FF-N);
