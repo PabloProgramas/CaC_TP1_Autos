@@ -130,18 +130,9 @@ a:any-link {
   color: var(--NEGRO);
 }
 
-.header__button > div {
-  height: 4px;
-  width: 30px;
-  background-color: var(--BLANCO);
-}
-
 .header__button {
   display: none;
-  flex-flow: column nowrap;
-  gap: 5px;
   background-color: var(--NEGRO);
-  border: none;
 }
 
 /* SECCION 1 */
