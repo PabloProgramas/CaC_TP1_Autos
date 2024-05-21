@@ -305,10 +305,10 @@ a:any-link {
 /*Formularios*/
 
 .formularios {
-  width: 30%;
+  max-width: 700px;
   border: 2px solid black;
   padding: 10px;
-  margin: 0px;
+  margin: auto;
   border-radius: 20px;
   font-family: var(--FF-N);
   font-style: italic;
@@ -370,8 +370,7 @@ a:any-link {
   font-style: italic;
   font-weight: 600;
   padding: 6px 15px;
-  position: absolute;
-  left: 13%;
+  margin: auto;
 }
 
 #btn_enviar:hover {
@@ -380,6 +379,51 @@ a:any-link {
   color: white;
   transform: scale(1.2);
   box-shadow: 0 0 15px #25d366;
+}
+/* Sección 4 */
+
+.containerQS {
+  max-width: 3200px;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 20px;
+}
+.cuarta {
+  background-color: var(--NEGRO);
+  padding: 0px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.cuarta h1 {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+.parrafoQS {
+  flex: 1 1 60%;
+  color: #666;
+  line-height: 1.6;
+  padding-right: 30px;
+  margin: 30 30 30 30px;
+  box-sizing: border-box;
+  text-align: justify;
+  font-weight: 600;
+  font-size: 0.55em;
+  text-indent: 2em; /* Agrega sangría al inicio del párrafo */
+}
+.imagenQS {
+  flex: 1 1 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 /*Footer*/
