@@ -35,34 +35,45 @@ for (const elemento of autos) {
   contenedorElementos.appendChild(divElemento);
 }
  */
+
+//Seleccionamos el formulario por su ID
 const formulario = document.getElementById("formulario");
+
+//Seleccionamos todos los inputs y textareas dentro del formulario 
 const inputs = document.querySelectorAll(
   "#formulario input, #formulario textarea"
 );
+
+//
 const errores = document.querySelectorAll(".error");
 
+//Agregamos el evento al formulario para manejar su envio 
 formulario.addEventListener("submit", (event) => {
   event.preventDefault();
-
+  //Variable para rastrear si hay errores en el formulario 
   let hayErrores = false;
 
-  // Validar campos
+  // Validacion de campos
   inputs.forEach((input) => {
+    // Selecciona el mensaje de error correspondiente al input actual
     const error = document.querySelector(
       `#formulario .error[for="${input.id}"]`
     );
-
+    //Comprobamos si el campo esta vacio
     if (input.value.trim() === "") {
+
+      //si esta vacio, 'hayErrores' cambia a true
       hayErrores = true;
-      alert("Faltan campos por completar"); // 'Este campo es obligatorio';
+      alert("Faltan campos por completar"); //Mostramos las alertas
       error.style.display = "block";
     }
   });
-
+  //si hay errores, mostramos la alerta y no se envia el formulario 
   if (hayErrores) {
     alert("Faltan completar campos");
     return;
   } else {
+    //Si no hay errores, mostramos una alerta indicando que se envio correctamente
     alert("Mensaje enviado correctamente");
   }
 });
