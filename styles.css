@@ -158,7 +158,7 @@ a:any-link {
   opacity: 0;
   color: var(--ROJO);
   transform: translateY(-100%);
-  display: inline-block;
+  display: block;
   font-style: italic;
 }
 
@@ -281,14 +281,12 @@ a:any-link {
   border-radius: 20px;
   font-family: var(--FF-N);
   color: #000000;
-  
 }
 
 /* Contáctenos*/
 
 #titulo {
   text-align: center;
- 
 }
 
 .subtitulo_Seccion3 {
@@ -309,15 +307,14 @@ a:any-link {
   font-size: 20px;
   background-color: var(--ROJO);
   opacity: 0.87;
-  color:#000000;
+  color: #000000;
   font-weight: bold;
-
 }
 
-#input {
+#formulario input {
   font-size: 14px;
   border-radius: 8px;
-  font-family: var(--FF-N);  
+  font-family: var(--FF-N);
 }
 
 #input_auto {
@@ -395,7 +392,7 @@ a:any-link {
   flex-wrap: wrap;
   padding: 10px;
 }
-.cuarta h1 {
+.cuarta h2 {
   color: white;
   text-align: center;
   width: 100%;

@@ -46,7 +46,7 @@
       <!--Seccion 2 catalogo de autos-->
       <section id="seccion2" class="segundo">
         <div>
-          <h1 class="coches">Nuestros coches disponibles</h1>
+          <h2 class="coches">Nuestros coches disponibles</h2>
           <div id="contenerdorAutos" class="contenerdorAutos">
             <div class="elemento">
               <img src="img/bmw-m4-csl.jpg" alt="BMW" />
@@ -77,27 +77,27 @@
       </section>
       <!--Seccion 3 Formulario-->
       <section id="seccion3" class="tercera">
-        <h1 id="titulo">Contáctenos</h1>
+        <h2 id="titulo">Contáctenos</h2>
 
         <form id="formulario" enctype="multipart/form-data">
           <div class="formularios">
             <h3 class="subtitulo_Seccion3">Tus datos:</h3>
             <label for="nombre">Nombre:</label>
-            <input type="text" id="input" placeholder="Mi nombre" /><br />
+            <input type="text" id="nombre" placeholder="Mi nombre" /><br />
 
             <label for="apellido">Apellido:</label>
-            <input type="text" id="input" placeholder="Mi apellido" /><br />
+            <input type="text" id="apellido" placeholder="Mi apellido" /><br />
 
             <label for="dni">DNI:</label>
-            <input type="number" id="input" placeholder="Mi DNI" /><br />
+            <input type="number" id="dni" placeholder="Mi DNI" /><br />
 
-            <label for="email">Correo electrónico:</label>
+            <label for="input_email">Correo electrónico:</label>
             <input type="email" id="input_email" placeholder="Mi email" /><br />
           </div>
 
           <div class="formularios">
             <h3 class="subtitulo_Seccion3">Tu auto nuevo:</h3>
-            <label>Elige tu auto:</label>
+            <label for="input_auto">Elige tu auto:</label>
             <select id="input_auto">
               <option value="">Mi auto</option>
               <option value="BMW">BMW | BMW_X1</option>
@@ -116,11 +116,12 @@
               <option value="Fiat">Fiat | Pulse</option>
               <option value="Fiat">Fiat | Toro</option>
               <option value="Fiat">Fiat | Fiorino</option>
-              <option value="Chevrolet"> Chevrolet | Camaro Coupé SS V8 SS AT</option>
-              <option value="Honda"> Honda | CR-V </option>
-              <option value="Honda"> Honda | Pilot</option>
-              <option value="Honda"> Honda | Prologue</option>
-
+              <option value="Chevrolet">
+                Chevrolet | Camaro Coupé SS V8 SS AT
+              </option>
+              <option value="Honda">Honda | CR-V</option>
+              <option value="Honda">Honda | Pilot</option>
+              <option value="Honda">Honda | Prologue</option>
             </select>
             <br />
             <label>Elige tu color: </label>
@@ -142,15 +143,18 @@
 
           <div class="formularios">
             <h3 class="subtitulo_Seccion3">Tu auto usado:</h3>
-            <p>Si tienes un auto usado, envíanos los datos para que te lo coticemos.</p>
+            <p>
+              Si tienes un auto usado, envíanos los datos para que te lo
+              coticemos.
+            </p>
             <label for="marca">Marca:</label>
-            <input type="text" id="input" placeholder="Marca" /><br />
+            <input type="text" id="marca" placeholder="Marca" /><br />
             <label for="modelo">Modelo:</label>
-            <input type="text" id="input" placeholder="Modelo" /><br />
+            <input type="text" id="modelo" placeholder="Modelo" /><br />
             <label for="anio">Año:</label>
-            <input type="number" id="input" placeholder="Año" /><br />
+            <input type="number" id="anio" placeholder="Año" /><br />
             <label for="foto">Foto:</label>
-            <input type="file" id="input" placeholder="Ingresa la foto" /><br />
+            <input type="file" id="foto" /><br />
           </div>
 
           <div class="formularios">
@@ -169,7 +173,7 @@
       <!-- Seccion 4 Quienes somos -->
       <div class="containerQS">
         <section id="seccion4" class="cuarta">
-          <h1 id="tituloQS">Quienes somos</h1>
+          <h2 id="tituloQS">Quienes somos</h2>
           <div class="parrafoQS">
             <p>
               En CAC Autos, llevamos 25 años dedicados a brindar los mejores
@@ -230,6 +234,5 @@
       </div>
     </footer>
     <script src="javascritp/header.js"></script>
-    <script src="javascritp/formulario.js"></script>
   </body>
 </html>
