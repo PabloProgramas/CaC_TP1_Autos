@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAC Autos</title>
+    <script
+      src="https://kit.fontawesome.com/84087f9c05.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d0bac0c207.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="img/d71b8d35-69f6-4f40-a50e-fb98bde97a46.jpg" />
+  </head>
+  <body>
+    <header class="header">
+      <i class="fa-solid fa-car"></i>
+      <div class="header__div">
+        <h1 class="header__h1">C_a_C AUTOS</h1>
+        <h3 id="subtitulo">Rent&Sale</h3>
+      </div>
+      <div id="btn-header" class="header__button">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <nav id="nav-header" class="header__nav">
+        <ul class="header__ul">
+          <li><a href="./index.html#seccion1">Home</a></li>
+          <li><a href="./index.html#seccion2">Nuestros Autos</a></li>
+          <li><a href="./index.html#seccion3">Contáctenos</a></li>
+          <li><a href="./index.html#seccion4">Quienes somos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Seccion 7  -->
+      <section id="listado" class="listado">
+        <div class="listado__div">
+          <h1>Listado de Productos del Inventario</h1>
+          <br />
+
+          <table>
+            <!-- Se crea una tabla para mostrar los productos. -->
+            <thead>
+              <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
+              <tr>
+                <th>Código</th>
+                <th>Descripción</th>
+                <th>Cantidad</th>
+                <th align="right">Precio</th>
+                <th>Imagen</th>
+                <th align="right">Proveedor</th>
+              </tr>
+            </thead>
+            <tbody id="tablaProductos"></tbody>
+          </table>
+        </div>
+        <br />
+        <div class="contenedor-centrado">
+          <a href="admin.html">Menu principal</a>
+        </div>
+      </section>
+    </main>
+    <footer id="footerbackground">
+      <div>
+        <h4 id="tituloRS">Búscanos en nuestras redes sociales</h4>
+      </div>
+
+      <div class="contenedor">
+        <a href="https://web.whatsapp.com/" target="whatsapp"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="https://www.youtube.com/" target="youtube"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://www.facebook.com/" target="faceboo"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.twitter.com/" target="twitter"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="instagram"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+      </div>
+      <div>
+        <h6 id="Copyright">Copyright - Todos los derechos reservados</h6>
+      </div>
+    </footer>
+    <script src="javascritp/header.js"></script>
+    <script>
+      /* const URL = "http://127.0.0.1:5000/" */
+
+      // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
+      const URL = "https://lospokes.pythonanywhere.com/";
+
+      // Realizamos la solicitud GET al servidor para obtener todos los productos.
+      fetch(URL + "productos")
+        .then(function (response) {
+          if (response.ok) {
+            //Si la respuesta es exitosa (response.ok), convierte el cuerpo de la respuesta de formato JSON a un objeto JavaScript y pasa estos datos a la siguiente promesa then.
+            return response.json();
+          } else {
+            // Si hubo un error, lanzar explícitamente una excepción para ser "catcheada" más adelante
+            throw new Error("Error al obtener los productos.");
+          }
+        })
+
+        //Esta función maneja los datos convertidos del JSON.
+        .then(function (data) {
+          let tablaProductos = document.getElementById("tablaProductos"); //Selecciona el elemento del DOM donde se mostrarán los productos.
+
+          // Iteramos sobre cada producto y agregamos filas a la tabla
+          for (let producto of data) {
+            let fila = document.createElement("tr"); //Crea una nueva fila de tabla (<tr>) para cada producto.
+            fila.innerHTML =
+              "<td>" +
+              producto.codigo +
+              "</td>" +
+              "<td>" +
+              producto.descripcion +
+              "</td>" +
+              '<td align="right">' +
+              producto.cantidad +
+              "</td>" +
+              '<td align="right">' +
+              producto.precio +
+              "</td>" +
+              // Mostrar miniatura de la imagen
+              /* '<td><img src=./static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>'; */
+
+              //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
+              "<td><img src=https://www.pythonanywhere.com/user/lospokes/files/home/lospokes/mysite/static/imagenes/" +
+              producto.imagen_url +
+              ' alt="Imagen del producto" style="width: 100px;"></td>' +
+              '<td align="right">' +
+              producto.proveedor +
+              "</td>";
+
+            //Una vez que se crea la fila con el contenido del producto, se agrega a la tabla utilizando el método appendChild del elemento tablaProductos.
+            tablaProductos.appendChild(fila);
+          }
+        })
+
+        //Captura y maneja errores, mostrando una alerta en caso de error al obtener los productos.
+        .catch(function (error) {
+          // Código para manejar errores
+          alert("Error al obtener los productos.");
+        });
+    </script>
+  </body>
+</html>

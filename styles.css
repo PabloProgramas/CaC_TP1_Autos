@@ -311,7 +311,7 @@ a:any-link {
   font-weight: bold;
 }
 
-#formulario input {
+.tercera #formulario input {
   font-size: 14px;
   border-radius: 8px;
   font-family: var(--FF-N);
@@ -419,6 +419,93 @@ a:any-link {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+}
+/* seccion ADMIN */
+.admin,
+.altas,
+.listado,
+.modificar,
+.eliminar {
+  min-height: calc(100vh - 144px);
+  background-image: url(img/bmw.jpg);
+  display: grid;
+  place-content: center;
+}
+.admin h1 {
+  text-align: center;
+  font-family: var(--FF-B);
+  font-size: 300%;
+  letter-spacing: 0.5rem;
+}
+.admin__div {
+  width: 400px;
+}
+.admin a {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+  background-color: gray;
+  border-radius: 25px;
+  margin-block: 0.3em;
+}
+.admin a:hover {
+  background-color: var(--BLANCO);
+  color: var(--NEGRO);
+}
+/* seccion ALTAS */
+
+.altas input,
+.modificar input {
+  width: 100%;
+  border: none;
+}
+.altas__div,
+.modificar__div {
+  background-color: hsla(0, 0%, 20%, 0.8);
+  padding: 0.5em;
+  border-radius: 25px;
+  max-width: 600px;
+}
+.altas__div div,
+.modificar__div div {
+  margin-block: 1rem;
+}
+.altas__div button,
+.modificar button,
+.eliminar button {
+  padding: 0.3em;
+  background-color: greenyellow;
+  border: none;
+}
+.altas__div a,
+.listado a,
+.modificar a,
+.eliminar a {
+  background-color: var(--ROJO);
+  padding: 0.2em;
+}
+/* seccion LISTADO */
+.listado__div,
+.eliminar__div {
+  background-color: hsla(0, 0%, 20%, 0.5);
+  padding: 0.5em;
+  border-radius: 25px;
+}
+.listado td,
+.listado th,
+.eliminar th,
+.eliminar td {
+  padding-inline: 0.5em;
+}
+.contenedor-centrado {
+  display: flex;
+  justify-content: center;
+}
+
+/* seccion MODIFICACIONES */
+.modificar__div {
+  margin-top: 80px;
 }
 
 /*Footer*/
