@@ -37,8 +37,8 @@
                 <label for="descripcionModificar">Descripción:</label>
                 <input type="text" id="descripcionModificar" v-model="descripcion" required><br>
 
-                <label for="cantidadModificar">Cantidad:</label>
-                <input type="number" id="cantidadModificar" v-model="cantidad" required><br>
+                <label for="ColorModificar">Color:</label>
+                <input type="number" id="ColorModificar" v-model="Color" required><br>
 
                 <label for="precioModificar">Precio:</label>
                 <input type="number" step="0.01" id="precioModificar" v-model="precio" required><br>
@@ -86,7 +86,7 @@
                 return {
                     codigo: '',
                     descripcion: '',
-                    cantidad: '',
+                    Color: '',
                     precio: '',
                     proveedor: '',
                     imagen_url: '',
@@ -116,7 +116,7 @@
                         //En este bloque, se asignan los datos obtenidos a las variables correspondientes de la aplicación Vue.
                         .then(data => {
                             this.descripcion = data.descripcion;
-                            this.cantidad = data.cantidad;
+                            this.Color = data.Color;
                             this.precio = data.precio;
                             this.proveedor = data.proveedor;
                             this.imagen_url =  data.imagen_url;
@@ -141,7 +141,7 @@
                     const formData = new FormData();
                     formData.append('codigo', this.codigo);
                     formData.append('descripcion', this.descripcion);
-                    formData.append('cantidad', this.cantidad);
+                    formData.append('Color', this.Color);
                     formData.append('proveedor', this.proveedor);
                     formData.append('precio', this.precio);
 
@@ -182,7 +182,7 @@
                 limpiarFormulario() {
                     this.codigo = '';
                     this.descripcion = '';
-                    this.cantidad = '';
+                    this.Color = '';
                     this.precio = '';
                     this.imagen_url = '';
                     this.imagenSeleccionada = null;

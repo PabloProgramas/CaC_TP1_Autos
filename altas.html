@@ -38,7 +38,7 @@
       <!-- Seccion 6  -->
       <section id="altas" class="altas">
         <div class="altas__div">
-          <h1>Agregar Productos al Inventario</h1>
+          <h1>Agregar Autos al Inventario</h1>
 
           <!--enctype="multipart/form-data" es necesario para enviar archivos al back.-->
           <form id="formulario" enctype="multipart/form-data">
@@ -47,8 +47,8 @@
               <input type="text" id="descripcion" name="descripcion" required />
             </div>
             <div>
-              <label for="cantidad">Cantidad:</label>
-              <input type="number" id="cantidad" name="cantidad" required />
+              <label for="Color">Color:</label>
+              <input type="text" id="Color" name="Color" required />
             </div>
             <div>
               <label for="precio">Precio:</label>
@@ -105,7 +105,7 @@
       //const URL = "http://127.0.0.1:5000/"
 
       //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-      const URL = "https://lospokes.pythonanywhere.com/";
+      const URL = "https://gonzasana.pythonanywhere.com/";
 
       // Capturamos el evento de envío del formulario
       document
@@ -145,7 +145,7 @@
             // Limpiar el formulario en ambos casos (éxito o error)
             .finally(function () {
               document.getElementById("descripcion").value = "";
-              document.getElementById("cantidad").value = "";
+              document.getElementById("Color").value = "";
               document.getElementById("precio").value = "";
               document.getElementById("imagenProducto").value = "";
               document.getElementById("proveedorProducto").value = "";

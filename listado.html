@@ -44,11 +44,11 @@
           <table>
             <!-- Se crea una tabla para mostrar los productos. -->
             <thead>
-              <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
+              <!--Encabezado de la tabla con columnas para código, descripción, Color, precio y acciones.-->
               <tr>
                 <th>Código</th>
                 <th>Descripción</th>
-                <th>Cantidad</th>
+                <th>Color</th>
                 <th align="right">Precio</th>
                 <th>Imagen</th>
                 <th align="right">Proveedor</th>
@@ -94,7 +94,7 @@
       /* const URL = "http://127.0.0.1:5000/" */
 
       // Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-      const URL = "https://lospokes.pythonanywhere.com/";
+      const URL = "https://gonzasana.pythonanywhere.com/";
 
       // Realizamos la solicitud GET al servidor para obtener todos los productos.
       fetch(URL + "productos")
@@ -123,7 +123,7 @@
               producto.descripcion +
               "</td>" +
               '<td align="right">' +
-              producto.cantidad +
+              producto.Color +
               "</td>" +
               '<td align="right">' +
               producto.precio +
@@ -132,7 +132,7 @@
               /* '<td><img src=./static/imagenes/' + producto.imagen_url +' alt="Imagen del producto" style="width: 100px;"></td>' + '<td align="right">' + producto.proveedor + '</td>'; */
 
               //Al subir al servidor, deberá utilizarse la siguiente ruta. USUARIO debe ser reemplazado por el nombre de usuario de Pythonanywhere
-              "<td><img src=https://www.pythonanywhere.com/user/lospokes/files/home/lospokes/mysite/static/imagenes/" +
+              "<td><img src=https://www.pythonanywhere.com/user/gonzasana/files/home/gonzasana/mysite/static/imagenes/" +
               producto.imagen_url +
               ' alt="Imagen del producto" style="width: 100px;"></td>' +
               '<td align="right">' +

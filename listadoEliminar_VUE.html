@@ -22,11 +22,11 @@
     <h1>Eliminar Productos del Inventario</h1><br>
 
     <table> <!-- Se crea una tabla para mostrar los productos. -->
-        <thead> <!--Encabezado de la tabla con columnas para código, descripción, cantidad, precio y acciones.-->
+        <thead> <!--Encabezado de la tabla con columnas para código, descripción, Color, precio y acciones.-->
             <tr>
                 <th>Código</th>
                 <th>Descripción</th>
-                <th>Cantidad</th>
+                <th>Color</th>
                 <th align="right">Precio</th>
                 <th>Acciones</th>
             </tr>
@@ -36,7 +36,7 @@
             <tr v-for="producto in productos">
                 <td>{{ producto.codigo }}</td>
                 <td>{{ producto.descripcion }}</td>
-                <td>{{ producto.cantidad }}</td>
+                <td>{{ producto.Color }}</td>
                 <td align="right">{{ producto.precio }}</td>
                 <!-- Se agrega un botón dentro de cada fila que, cuando se hace clic, activa la función eliminarProducto de Vue.js, pasando como argumento el código del producto. -->
                 <td><button @click="eliminarProducto(producto.codigo)">Eliminar</button></td>
