@@ -1,239 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAC Autos</title>
-    <script
-      src="https://kit.fontawesome.com/84087f9c05.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://kit.fontawesome.com/d0bac0c207.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="img/d71b8d35-69f6-4f40-a50e-fb98bde97a46.jpg" />
-  </head>
 
-  <body>
-    <header class="header">
-      <i class="fa-solid fa-car"></i>
-      <div class="header__div">
-        <h1 class="header__h1">C_a_C AUTOS</h1>
-        <h3 id="subtitulo">Rent&Sale</h3>
-      </div>
-      <div id="btn-header" class="header__button">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-      <nav id="nav-header" class="header__nav">
-        <ul class="header__ul">
-          <li><a href="#seccion1">Home</a></li>
-          <li><a href="#seccion2">Nuestros Autos</a></li>
-          <li><a href="#seccion3">Contáctenos</a></li>
-          <li><a href="#seccion4">Quienes somos</a></li>
-          <li><a href="./admin.html">Admin</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!--Seccion 1 Principal-->
-      <section id="seccion1" class="primero">
-        <h2 class="primero__h2">
-          <span class="primero__p">Es tu auto...</span>
-          <span class="primero__p--segundo">es tu estilo!</span>
-        </h2>
-      </section>
-      <!--Seccion 2 catalogo de autos-->
-      <section id="seccion2" class="segundo">
-        <div>
-          <h2 class="coches">Nuestros coches disponibles</h2>
-          <div id="contenerdorAutos" class="contenerdorAutos">
-            <div class="elemento">
-              <img src="img/bmw-m4-csl.jpg" alt="BMW" />
-              <h3>BMW</h3>
-            </div>
-            <div class="elemento">
-              <img src="img/audi-a5-4.jpg" alt="AUDI" />
-              <h3>AUDI</h3>
-            </div>
-            <div class="elemento">
-              <img src="img/toyota-corolla-gr-sport-2024-0.jpg" alt="Toyota" />
-              <h3>TOYOTA</h3>
-            </div>
-            <div class="elemento">
-              <img src="img/157256.jpg" alt="FIAT" />
-              <h3>Fiat</h3>
-            </div>
-            <div class="elemento">
-              <img src="img/chevrolet.avif" alt="CHEVROLET" />
-              <h3>Camaro</h3>
-            </div>
-            <div class="elemento">
-              <img src="img/honda.jpg" alt="HONDA" />
-              <h3>Honda</h3>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAC Autos</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/84087f9c05.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/d0bac0c207.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="img/d71b8d35-69f6-4f40-a50e-fb98bde97a46.jpg" />
+  
+</head>
+
+<body class="bods">
+  <header class="header">
+    <i class="fa-solid fa-car"></i>
+    <div class="header__div">
+      <h1 class="header__h1">C_a_C AUTOS</h1>
+      <h3 id="subtitulo">Rent&Sale</h3>
+    </div>
+    <div id="btn-header" class="header__button">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <nav id="nav-header" class="header__nav">
+      <ul class="header__ul">
+        <li><a href="#seccion1">Home</a></li>
+        <li><a href="#seccion2">Nuestros Autos</a></li>
+        <li><a href="#seccion3">Contáctenos</a></li>
+        <li><a href="#seccion4">Quienes somos</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#loginModal">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--Seccion 1 Principal-->
+    <section id="seccion1" class="primero">
+      <h2 class="primero__h2">
+        <span class="primero__p">Es tu auto...</span>
+        <span class="primero__p--segundo">es tu estilo!</span>
+      </h2>
+    </section>
+    <!--Seccion 2 catalogo de autos-->
+    <section id="seccion2" class="segundo">
+      <div>
+        <h2 class="coches">Nuestros coches disponibles</h2>
+        <div id="contenerdorAutos" class="contenerdorAutos">
+          <div class="elemento">
+            <img src="img/bmw-m4-csl.jpg" alt="BMW" />
+            <h3>BMW</h3>
+          </div>
+          <div class="elemento">
+            <img src="img/audi-a5-4.jpg" alt="AUDI" />
+            <h3>AUDI</h3>
+          </div>
+          <div class="elemento">
+            <img src="img/toyota-corolla-gr-sport-2024-0.jpg" alt="Toyota" />
+            <h3>TOYOTA</h3>
+          </div>
+          <div class="elemento">
+            <img src="img/157256.jpg" alt="FIAT" />
+            <h3>Fiat</h3>
+          </div>
+          <div class="elemento">
+            <img src="img/chevrolet.avif" alt="CHEVROLET" />
+            <h3>Camaro</h3>
+          </div>
+          <div class="elemento">
+            <img src="img/honda.jpg" alt="HONDA" />
+            <h3>Honda</h3>
           </div>
         </div>
+      </div>
+    </section>
+    <!--Seccion 3 Formulario-->
+    <section id="seccion3" class="tercera">
+      <h2 id="titulo">Contáctenos</h2>
+
+      <form id="formulario" enctype="multipart/form-data">
+        <div class="formularios">
+          <h3 class="subtitulo_Seccion3">Tus datos:</h3>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Mi nombre" /><br />
+
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" placeholder="Mi apellido" /><br />
+
+          <label for="dni">DNI:</label>
+          <input type="number" id="dni" placeholder="Mi DNI" /><br />
+
+          <label for="input_email">Correo electrónico:</label>
+          <input type="email" id="input_email" placeholder="Mi email" /><br />
+        </div>
+
+        <div class="formularios">
+          <h3 class="subtitulo_Seccion3">Tu auto nuevo:</h3>
+          <label for="input_auto">Elige tu auto:</label>
+          <select id="input_auto">
+            <option value="">Mi auto</option>
+            <option value="BMW">BMW | BMW_X1</option>
+            <option value="BMW">BMW | BMW_M5_Sedán</option>
+            <option value="BMW">BMW | BMW_S8_Coupé</option>
+            <option value="BMW">BMW | BMW_Z4_Roadster</option>
+            <option value="Audi">Audi | A1</option>
+            <option value="Audi">Audi | Q2</option>
+            <option value="Audi">Audi | e-tron_GT</option>
+            <option value="Audi">Audi | Q8_e-tron</option>
+            <option value="Toyota">Toyota | Corola</option>
+            <option value="Toyota">Toyota | Hilux</option>
+            <option value="Toyota">Toyota | Sw4</option>
+            <option value="Toyota">Toyota | Yaris</option>
+            <option value="Fiat">Fiat | Cronos</option>
+            <option value="Fiat">Fiat | Pulse</option>
+            <option value="Fiat">Fiat | Toro</option>
+            <option value="Fiat">Fiat | Fiorino</option>
+            <option value="Chevrolet">
+              Chevrolet | Camaro Coupé SS V8 SS AT
+            </option>
+            <option value="Honda">Honda | CR-V</option>
+            <option value="Honda">Honda | Pilot</option>
+            <option value="Honda">Honda | Prologue</option>
+          </select>
+          <br />
+          <label>Elige tu Color: </label>
+
+          rojo <input type="radio" name="Color" value="r" />
+
+          | azul <input type="radio" name="Color" value="a" />
+
+          | blanco <input type="radio" name="Color" value="b" />
+
+          | negro <input type="radio" name="Color" value="n" />
+          <br />
+          <label>Elige tu plan:</label>
+
+          compra <input type="radio" name="plan" value="r" /> | alquiler
+          <input type="radio" name="plan" value="a" /> | plan de ahorro
+          <input type="radio" name="plan" value="a" /><br />
+        </div>
+
+        <div class="formularios">
+          <h3 class="subtitulo_Seccion3">Tu auto usado:</h3>
+          <p>
+            Si tienes un auto usado, envíanos los datos para que te lo
+            coticemos.
+          </p>
+          <label for="marca">Marca:</label>
+          <input type="text" id="marca" placeholder="Marca" /><br />
+          <label for="modelo">Modelo:</label>
+          <input type="text" id="modelo" placeholder="Modelo" /><br />
+          <label for="anio">Año:</label>
+          <input type="number" id="anio" placeholder="Año" /><br />
+          <label for="foto">Foto:</label>
+          <input type="file" id="foto" /><br />
+        </div>
+
+        <div class="formularios">
+          <h3 class="subtitulo_Seccion3">Tu mensaje:</h3>
+          <textarea id="input_mensaje" name="mensaje" rows="4" placeholder="Mi mensaje"></textarea>
+          <br />
+          <button type="submit" id="btn_enviar">- Enviar -</button>
+        </div>
+      </form>
+    </section>
+    <!-- Seccion 4 Quienes somos -->
+    <div class="containerQS">
+      <section id="seccion4" class="cuarta">
+        <h2 id="tituloQS">Quienes somos</h2>
+        <div class="parrafoQS">
+          <p>
+            En CAC Autos, llevamos 25 años dedicados a brindar los mejores
+            servicios en el sector automotriz. Desde nuestros inicios, hemos
+            trabajado con un compromiso firme de ofrecer calidad, confianza y
+            excelencia en cada uno de nuestros servicios. Nuestra vasta
+            experiencia nos ha permitido consolidarnos como líderes en el
+            mercado, ganándonos la confianza y lealtad de miles de clientes
+            satisfechos. Nuestro equipo está compuesto por profesionales
+            altamente calificados y apasionados por la industria automotriz.
+            Creemos en la importancia de la formación continua y la
+            innovación, lo que nos permite estar siempre a la vanguardia de
+            las últimas tendencias y tecnologías del sector. En CAC Autos, nos
+            especializamos en la venta y alquiler de vehículos nuevos y
+            usados, mantenimiento preventivo y correctivo, así como en la
+            provisión de repuestos originales. Nuestro objetivo es garantizar
+            que cada cliente reciba un servicio personalizado y de alta
+            calidad, adaptado a sus necesidades y expectativas. A lo largo de
+            estos 25 años, hemos aprendido que la clave del éxito radica en
+            escuchar y entender a nuestros clientes. Por ello, nos esforzamos
+            por ofrecer una atención al cliente excepcional, creando
+            relaciones duraderas basadas en la confianza y el respeto mutuo.
+          </p>
+        </div>
+        <div class="imagenQS">
+          <img src="https://cloudfront-us-east-1.images.arcpublishing.com/artear/32ZBEAYF5QBIMZZ7IKN6CH2BLA.jpg"
+            alt="Imagen de CAC Autos" />
+        </div>
       </section>
-      <!--Seccion 3 Formulario-->
-      <section id="seccion3" class="tercera">
-        <h2 id="titulo">Contáctenos</h2>
+    </div>
+  </main>
+  <footer id="footerbackground">
+    <div>
+      <h4 id="tituloRS">Búscanos en nuestras redes sociales</h4>
+    </div>
 
-        <form id="formulario" enctype="multipart/form-data">
-          <div class="formularios">
-            <h3 class="subtitulo_Seccion3">Tus datos:</h3>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" placeholder="Mi nombre" /><br />
-
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" placeholder="Mi apellido" /><br />
-
-            <label for="dni">DNI:</label>
-            <input type="number" id="dni" placeholder="Mi DNI" /><br />
-
-            <label for="input_email">Correo electrónico:</label>
-            <input type="email" id="input_email" placeholder="Mi email" /><br />
-          </div>
-
-          <div class="formularios">
-            <h3 class="subtitulo_Seccion3">Tu auto nuevo:</h3>
-            <label for="input_auto">Elige tu auto:</label>
-            <select id="input_auto">
-              <option value="">Mi auto</option>
-              <option value="BMW">BMW | BMW_X1</option>
-              <option value="BMW">BMW | BMW_M5_Sedán</option>
-              <option value="BMW">BMW | BMW_S8_Coupé</option>
-              <option value="BMW">BMW | BMW_Z4_Roadster</option>
-              <option value="Audi">Audi | A1</option>
-              <option value="Audi">Audi | Q2</option>
-              <option value="Audi">Audi | e-tron_GT</option>
-              <option value="Audi">Audi | Q8_e-tron</option>
-              <option value="Toyota">Toyota | Corola</option>
-              <option value="Toyota">Toyota | Hilux</option>
-              <option value="Toyota">Toyota | Sw4</option>
-              <option value="Toyota">Toyota | Yaris</option>
-              <option value="Fiat">Fiat | Cronos</option>
-              <option value="Fiat">Fiat | Pulse</option>
-              <option value="Fiat">Fiat | Toro</option>
-              <option value="Fiat">Fiat | Fiorino</option>
-              <option value="Chevrolet">
-                Chevrolet | Camaro Coupé SS V8 SS AT
-              </option>
-              <option value="Honda">Honda | CR-V</option>
-              <option value="Honda">Honda | Pilot</option>
-              <option value="Honda">Honda | Prologue</option>
-            </select>
-            <br />
-            <label>Elige tu Color: </label>
-
-            rojo <input type="radio" name="Color" value="r" />
-
-            | azul <input type="radio" name="Color" value="a" />
-
-            | blanco <input type="radio" name="Color" value="b" />
-
-            | negro <input type="radio" name="Color" value="n" />
-            <br />
-            <label>Elige tu plan:</label>
-
-            compra <input type="radio" name="plan" value="r" /> | alquiler
-            <input type="radio" name="plan" value="a" /> | plan de ahorro
-            <input type="radio" name="plan" value="a" /><br />
-          </div>
-
-          <div class="formularios">
-            <h3 class="subtitulo_Seccion3">Tu auto usado:</h3>
-            <p>
-              Si tienes un auto usado, envíanos los datos para que te lo
-              coticemos.
-            </p>
-            <label for="marca">Marca:</label>
-            <input type="text" id="marca" placeholder="Marca" /><br />
-            <label for="modelo">Modelo:</label>
-            <input type="text" id="modelo" placeholder="Modelo" /><br />
-            <label for="anio">Año:</label>
-            <input type="number" id="anio" placeholder="Año" /><br />
-            <label for="foto">Foto:</label>
-            <input type="file" id="foto" /><br />
-          </div>
-
-          <div class="formularios">
-            <h3 class="subtitulo_Seccion3">Tu mensaje:</h3>
-            <textarea
-              id="input_mensaje"
-              name="mensaje"
-              rows="4"
-              placeholder="Mi mensaje"
-            ></textarea>
-            <br />
-            <button type="submit" id="btn_enviar">- Enviar -</button>
-          </div>
-        </form>
-      </section>
-      <!-- Seccion 4 Quienes somos -->
-      <div class="containerQS">
-        <section id="seccion4" class="cuarta">
-          <h2 id="tituloQS">Quienes somos</h2>
-          <div class="parrafoQS">
-            <p>
-              En CAC Autos, llevamos 25 años dedicados a brindar los mejores
-              servicios en el sector automotriz. Desde nuestros inicios, hemos
-              trabajado con un compromiso firme de ofrecer calidad, confianza y
-              excelencia en cada uno de nuestros servicios. Nuestra vasta
-              experiencia nos ha permitido consolidarnos como líderes en el
-              mercado, ganándonos la confianza y lealtad de miles de clientes
-              satisfechos. Nuestro equipo está compuesto por profesionales
-              altamente calificados y apasionados por la industria automotriz.
-              Creemos en la importancia de la formación continua y la
-              innovación, lo que nos permite estar siempre a la vanguardia de
-              las últimas tendencias y tecnologías del sector. En CAC Autos, nos
-              especializamos en la venta y alquiler de vehículos nuevos y
-              usados, mantenimiento preventivo y correctivo, así como en la
-              provisión de repuestos originales. Nuestro objetivo es garantizar
-              que cada cliente reciba un servicio personalizado y de alta
-              calidad, adaptado a sus necesidades y expectativas. A lo largo de
-              estos 25 años, hemos aprendido que la clave del éxito radica en
-              escuchar y entender a nuestros clientes. Por ello, nos esforzamos
-              por ofrecer una atención al cliente excepcional, creando
-              relaciones duraderas basadas en la confianza y el respeto mutuo.
-            </p>
-          </div>
-          <div class="imagenQS">
-            <img
-              src="https://cloudfront-us-east-1.images.arcpublishing.com/artear/32ZBEAYF5QBIMZZ7IKN6CH2BLA.jpg"
-              alt="Imagen de CAC Autos"
-            />
-          </div>
-        </section>
+    <div class="contenedor">
+      <a href="https://web.whatsapp.com/" target="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href="https://www.youtube.com/" target="youtube"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.facebook.com/" target="faceboo"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.twitter.com/" target="twitter"><i class="fa-brands fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="instagram"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <div>
+      <h6 id="Copyright">Copyright - Todos los derechos reservados</h6>
+    </div>
+  </footer>
+  <!-- Modal de Inicio de Sesión -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Inicio de Sesión</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="loginForm">
+            <div class="form-group">
+              <label for="username" class="inputUser">Usuario</label>
+              <input type="text" class="form-control" id="username" placeholder="Ingresa tu usuario" required>
+            </div>
+            <div class="form-group">
+              <label for="password" class="inputUser">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+          </form>
+        </div>
       </div>
-    </main>
-    <footer id="footerbackground">
-      <div>
-        <h4 id="tituloRS">Búscanos en nuestras redes sociales</h4>
-      </div>
+    </div>
+  </div>
 
-      <div class="contenedor">
-        <a href="https://web.whatsapp.com/" target="whatsapp"
-          ><i class="fa-brands fa-whatsapp"></i
-        ></a>
-        <a href="https://www.youtube.com/" target="youtube"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
-        <a href="https://www.facebook.com/" target="faceboo"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://www.twitter.com/" target="twitter"
-          ><i class="fa-brands fa-twitter"></i
-        ></a>
-        <a href="https://www.instagram.com/" target="instagram"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-      </div>
-      <div>
-        <h6 id="Copyright">Copyright - Todos los derechos reservados</h6>
-      </div>
-    </footer>
-    <script src="javascritp/header.js"></script>
-  </body>
+  <script src="javascritp/header.js"></script>
+</body>
+
 </html>

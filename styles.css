@@ -29,11 +29,11 @@ li {
   list-style: none;
 }
 
-body {
+.bods {
   max-width: 100%;
   margin: auto;
-  font-family: var(--FF-N);
-  font-size: var(--FS);
+  font-family: var(--FF-N1);
+  font-size: var(--FS1);
   color: var(--BLANCO);
 }
 
@@ -48,8 +48,8 @@ a:any-link {
 /* VARIABLES */
 :root {
   /* FONTS */
-  --FS: 1.5rem;
-  --FF-N: "Nunito", sans-serif;
+  --FS1: 1.5rem;
+  --FF-N1: "Nunito", sans-serif;
   --FF-B: "Bebas Neue", sans-serif;
   --FF-P: "Pacifico", sans-serif;
   /* COLORES */
@@ -123,6 +123,7 @@ a:any-link {
   border-radius: 25px;
   padding: var(--PADDING);
   text-align: center;
+  margin-top: 0.5rem;
 }
 
 .header a:hover {
@@ -582,4 +583,75 @@ a:any-link {
   text-align: center;
   font-family: var(--FF-N);
   font-weight: 800;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+.modal-content {
+  background-color: var(--NEGRO);
+  color: var(--BLANCO);
+  border: 2px solid var(--ROJO);
+  border-radius: 15px;
+}
+
+.modal-header {
+  border-bottom: 1px solid var(--ROJO);
+  padding: var(--PADDING);
+}
+
+.modal-title {
+  font-family: var(--FF-B);
+  font-size: 1.75rem;
+}
+
+.modal-header .close {
+  color: var(--ROJO);
+  opacity: 1;
+}
+
+.modal-body {
+  padding: var(--PADDING);
+}
+
+#loginForm .form-group {
+  margin-bottom: 1rem;
+}
+
+#loginForm .inputUser {
+  font-family: var(--FF-N1);
+  color: var(--BLANCO);
+}
+
+#loginForm .form-control {
+  background-color: transparent;
+  border: 1px solid var(--BLANCO);
+  color: var(--BLANCO);
+  border-radius: 8px;
+  padding: var(--PADDING);
+}
+
+#loginForm .form-control::placeholder {
+  color: var(--BLANCO);
+  opacity: 0.7;
+}
+
+#loginForm .btn-primary {
+  background-color: var(--ROJO);
+  border: none;
+  color: var(--BLANCO);
+  font-family: var(--FF-N1);
+  font-size: 1rem;
+  padding: var(--PADDING);
+  border-radius: 8px;
+}
+
+#loginForm .btn-primary:hover {
+  background-color: var(--BLANCO);
+  color: var(--NEGRO);
 }

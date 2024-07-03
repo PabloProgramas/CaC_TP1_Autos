@@ -105,7 +105,7 @@ class Catalogo:
             print("-" * 40)
             print(f"Código.....: {producto['codigo']}")
             print(f"Descripción: {producto['descripcion']}")
-            print(f"Color...: {producto['Color']}")
+            print(f"Color...:    {producto['Color']}")
             print(f"Precio.....: {producto['precio']}")
             print(f"Imagen.....: {producto['imagen_url']}")
             print(f"Proveedor..: {producto['proveedor']}")
